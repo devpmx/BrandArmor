@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --background: #070a13;
+  --foreground: #f8fafc;
+  --card: #0f172a;
+  --card-foreground: #f8fafc;
+  --popover: #0f172a;
+  --popover-foreground: #f8fafc;
+  --primary: #10b981; /* Emerald Green */
+  --primary-foreground: #020617;
+  --secondary: #1e293b;
+  --secondary-foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #1e293b;
+  --accent-foreground: #f8fafc;
+  --destructive: #ef4444; /* Neon Crimson */
+  --destructive-foreground: #f8fafc;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #10b981;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Threat Ring Glow Animations */
+@keyframes glowSafe {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.3));
+    opacity: 0.85;
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(16, 185, 129, 0.7));
+    opacity: 1;
+  }
+}
+
+@keyframes glowWarning {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.3));
+    opacity: 0.85;
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.7));
+    opacity: 1;
+  }
+}
+
+@keyframes glowCritical {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(239, 68, 68, 0.4));
+    opacity: 0.8;
+  }
+  50% {
+    filter: drop-shadow(0 0 28px rgba(239, 68, 68, 0.95));
+    opacity: 1;
+  }
+}
+
+.glow-safe {
+  animation: glowSafe 3s infinite ease-in-out;
+}
+
+.glow-warning {
+  animation: glowWarning 3s infinite ease-in-out;
+}
+
+.glow-critical {
+  animation: glowCritical 2s infinite ease-in-out;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070a13;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Diff transitions and highlight pulses */
+.diff-highlight-add {
+  background-color: rgba(16, 185, 129, 0.15);
+  border-left: 2px solid #10b981;
+}
+
+.diff-highlight-del {
+  background-color: rgba(239, 68, 68, 0.15);
+  border-left: 2px solid #ef4444;
+  text-decoration: line-through;
+  color: #f87171;
+}
