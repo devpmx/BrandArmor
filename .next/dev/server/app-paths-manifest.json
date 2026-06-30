@@ -1,0 +1,7 @@
+{
+  "/api/cron/check-listings/route": "app/api/cron/check-listings/route.js",
+  "/api/dashboard/products/route": "app/api/dashboard/products/route.js",
+  "/api/dashboard/stats/route": "app/api/dashboard/stats/route.js",
+  "/api/db/seed/route": "app/api/db/seed/route.js",
+  "/page": "app/page.js"
+}

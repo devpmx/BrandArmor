@@ -1,0 +1,11 @@
+var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/db/seed/route.js")
+R.c("server/chunks/[root-of-the-server]__0f-6ke3._.js")
+R.c("server/chunks/node_modules_next_0rh_pii._.js")
+R.c("server/chunks/node_modules_@smithy_core_dist-es_1-azofu._.js")
+R.c("server/chunks/node_modules_@aws-sdk_core_dist-es_submodules_007nnzw._.js")
+R.c("server/chunks/node_modules_@aws-sdk_client-dynamodb_0_gfao6._.js")
+R.c("server/chunks/node_modules_0ozl5gy._.js")
+R.c("server/chunks/[root-of-the-server]__0me2qv6._.js")
+R.c("server/chunks/_next-internal_server_app_api_db_seed_route_actions_1u7qna7.js")
+R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/db/seed/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
+module.exports=R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/db/seed/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports
